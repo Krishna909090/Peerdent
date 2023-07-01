@@ -3,8 +3,8 @@ const env = require("dotenv")
 
 
 let s3 = new AWS.S3({
-    secretAccessKey:"k3nrG4/XqHfVz+Xq9WWM4YbNX1fSgJ0MtEhJNGpL",
-    accessKeyId:"AKIASMHUNBJUO6FNEDF6",
+    secretAccessKey:process.env.Accesskey,
+    accessKeyId:process.env.secretAccessKey,
     // region:"ap-south-1"
 });
 
